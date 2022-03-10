@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector cha, con, cháu, hậu duệ</title>
+</head>
+<body>
+    <style>
+        ul#main-menu,ul.sub-menu{
+            list-style: none;
+        }
+
+        ul#main-menu a{
+            text-decoration: none;
+        }
+        ul#main-menu >li>a{
+            color: brown;
+        }
+        ul#main-menu ul.sub-menu a{
+            color: black;
+        }
+        a[href]{
+            color: red;
+            cursor: crosshair;
+        }
+
+         a[href="http/youtube.com"]{
+            color: violet;
+        }
+        #wrapper{
+            position:relative;
+            width: 100%;
+            min-height: 1000px;
+            margin: 0 auto;
+            /* background:red; */
+        }
+        #content{
+            position: absolute;
+            height: 50%;
+            width: 50%;
+            margin-bottom: 0;
+            left: 25%;
+            background-color:bisque;
+            text-align: center;
+            
+        }
+    </style>
+    <div id="wrapper">
+        <ul id="main-menu">
+            <li><a href="">Trang chủ</a></li>
+            <li><a href="">Giới thiệu</a></li>
+            <li>
+                <a href="">Sản phẩm</a>
+                <ul class="sub-menu">
+                    <li><a href="">Máy tính</a></li>
+                    <li><a href="">Điện thoại</a></li>
+                </ul>
+            </li>
+            <li><a href="">Liên hệ</a></li>
+        </ul>
+        <div id="content">
+            <h3>Chúng ta có một con lợn tên là Quỳnh béo ú mập địt</h3>
+            <img style="width:200px; height:200px" src="https://upanh123.com/wp-content/uploads/2019/05/hinh-anh-con-heo-de-thuong.jpg" alt="Ảnh con lợn"><br>
+            <span>Đây là hình ảnh con lợn Quỳnh đang nằm</span>
+        </div>
+    </div>
+    
+
+</body>
+</html>

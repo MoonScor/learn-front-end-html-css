@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        #header{
+            height: 46px;
+            background-color: #000;
+        }
+
+        #nav_main{
+        }
+
+        #nav_main_bar{
+            position: absolute;
+        }
+
+        #nav_main_bar >li{
+            position: relative;
+            display: inline-block;
+            height: 46px;
+        }
+
+        #nav_main_bar>li:hover #subnav_main_bar{
+            display: block;
+        }
+
+        #subnav_main_bar li:hover a{
+            background-color: tomato;
+        }
+        #nav_main_bar li a{
+            padding:0 20px;
+            line-height: 46px;
+            color: #fff;
+            text-decoration: none;
+            font-family: sans-serif;
+        }
+
+        #subnav_main_bar{
+            position: absolute;
+            display: none;
+        }
+
+        #subnav_main_bar>li{
+            display: block;
+            background-color: #000;
+            color: white;    
+        }
+
+        #subnav_main_bar li a{
+            display: block;
+            line-height: 46px;
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .content{
+            position: relative;
+            background-color: bisque;
+
+        }
+
+        .content .article{
+            position: absolute;
+            /* margin-top:300px;  */
+            margin-left: 60px;
+        }
+
+        #nav_aside{
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        #nav_aside li{
+            display: block;
+            background-color: tomato;
+        }
+
+        #nav_aside li a{
+            display: block;
+            padding: 0 5px;
+            border-bottom: 0.5px solid black;
+            color: #fff;
+            line-height: 46px;
+            text-decoration: none;
+            
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="header">
+        <nav id="nav_main">
+            <ul id="nav_main_bar">
+                <li><a href="">Home</a></li>
+                <li>
+                    <a href="">About</a>
+                    <ul id="subnav_main_bar">
+                        <li><a href="">Item1</a></li>
+                        <li><a href="">Item2</a></li>
+                        <li><a href="">Item3</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">Product</a></li>
+            </ul>
+        </nav>
+    </div>
+    <section class="content">
+        <article class="article">
+            <h1>Đây là tiêu đề</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit maiores repellat minima nulla magnam accusantium quod, deserunt error consequuntur, nemo facere, modi quae iste qui animi eligendi debitis consectetur quaerat? Quos architecto dolores omnis vitae placeat nisi ab itaque dignissimos. Asperiores reiciendis natus ab optio suscipit, dolore voluptates modi quidem odio repellat tempora, fugit nihil omnis quos commodi vero deleniti! Placeat pariatur, ipsa similique quidem illum culpa numquam itaque voluptatum libero repudiandae, possimus, ad eos dolore incidunt vero quaerat atque. Deserunt ab id cumque error, natus, pariatur fuga neque assumenda alias aliquam magni mollitia perferendis dicta. Quidem cupiditate voluptate sapiente.</p>
+        </article>
+        <nav id="nav_aside">
+            <ul>
+                <li><a href="">HTML</a></li>
+                <li><a href="">CSS</a></li>
+                <li><a href="">PHP</a></li>
+            </ul>
+        </nav>
+    </section>
+</body>
+</html>

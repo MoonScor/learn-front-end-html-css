@@ -1,0 +1,16 @@
+#wrapper {
+    width: 930px;
+    margin: 0px auto;
+}
+h1 {
+    text-align: center;
+}
+
+p.font-bold{
+    font-weight: bold;
+}
+
+#key {
+    text-align: right;
+    color: gold;
+}

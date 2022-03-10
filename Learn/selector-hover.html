@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector Hover</title>
+</head>
+<body>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        #header{
+            background-color: #000;
+            height: 46px;
+        }
+
+        #nav{
+            display: flex;
+            justify-content: center;
+        }
+
+        #nav .icon::before{
+            content: "🤔";
+        }
+        #nav >li{
+            position: relative;
+            display: inline-block;
+            height: 46px;
+
+        }
+
+        #nav li:hover a{
+            background-color: tomato;
+            color: #000;
+        }
+
+        #nav li:hover .subnav{
+            display: block;       
+        }
+
+        #nav .subnav li:hover a{
+            background-color: tomato;
+            color: #000;
+        }
+        #nav li a{
+            padding: 0 20px;
+            line-height: 46px;
+            display: block;
+            font-family: sans-serif;
+            color: #fff;
+            text-decoration: none;
+        }
+        #nav .subnav {
+            position: absolute;
+            display: none;
+        }
+        #nav .subnav li{
+            display: block;
+            min-width: 200px;
+        }
+
+        #nav .subnav li a{
+            color: #fff;
+            background-color: #000;
+        }
+    </style>
+    <div id="header">
+        <ul id="nav">
+            <li><a class="icon" href="">Icon</a></li>
+            <li><a href="">Home</a></li>
+            <li>
+                <a href="">Sản Phẩm</a>
+                <ul class="subnav">
+                    <li><a href="">Điện thoại</a></li>
+                    <li><a href="">Máy tính</a></li>
+                    <li><a href="">Airpod</a></li>
+                </ul>
+            </li>
+            <li><a href="">About</a></li>
+            <li>
+                <a href="">Tin tức</a>
+                <ul class="subnav">
+                    <li><a href="">Đáng chú ý</a></li>
+                    <li><a href="">Tin mới</a></li>
+                    <li><a href="">Tin vắn</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

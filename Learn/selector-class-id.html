@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tạo layout sử dụng class và id</title>
+</head>
+<body>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        #wrapper{
+            position: relative;
+            width: 960px;
+            margin: 0 auto;
+        }
+
+        #header{
+            position:fixed;
+            top: 0;
+            width: 960px;
+            height: 46px;
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+        }
+
+        #footer{
+            position: fixed;
+            bottom: 0;
+            width: 960px;
+            height: 46px;
+            color: #fff;
+            background-color: #000;
+            text-align: center;
+        }
+        #content{
+            min-height: 1000px;
+            margin-top: 46px;
+            background-color: tomato;
+        }
+
+        .text-center{
+            text-align: center;
+        }
+
+        .text-color{
+            color: #fff;
+        }
+    </style>
+    <div id="wrapper">
+        <div id="header">
+            <h2>Header</h2>
+        </div>
+
+        <div id="content" class="text-color">
+            <p class="text-center text-color">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla fugit earum autem ducimus minima repellat, blanditiis ut sed esse iure natus explicabo repellendus quia architecto incidunt. Voluptate distinctio placeat asperiores enim necessitatibus, laboriosam aliquid amet commodi non nesciunt, quod consequatur nobis impedit reprehenderit autem id soluta perferendis alias repellendus ducimus mollitia. Quis neque, quibusdam quaerat adipisci debitis illum aliquam et earum officia accusamus provident! Molestiae pariatur rerum voluptatem voluptate molestias a dicta, placeat nemo obcaecati eveniet quis, vero ut libero quaerat perspiciatis ullam, laborum amet nisi magni alias repellendus sapiente cumque! Cumque doloribus iste amet sapiente quod, explicabo molestias at.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla fugit earum autem ducimus minima repellat, blanditiis ut sed esse iure natus explicabo repellendus quia architecto incidunt. Voluptate distinctio placeat asperiores enim necessitatibus, laboriosam aliquid amet commodi non nesciunt, quod consequatur nobis impedit reprehenderit autem id soluta perferendis alias repellendus ducimus mollitia. Quis neque, quibusdam quaerat adipisci debitis illum aliquam et earum officia accusamus provident! Molestiae pariatur rerum voluptatem voluptate molestias a dicta, placeat nemo obcaecati eveniet quis, vero ut libero quaerat perspiciatis ullam, laborum amet nisi magni alias repellendus sapiente cumque! Cumque doloribus iste amet sapiente quod, explicabo molestias at.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla fugit earum autem ducimus minima repellat, blanditiis ut sed esse iure natus explicabo repellendus quia architecto incidunt. Voluptate distinctio placeat asperiores enim necessitatibus, laboriosam aliquid amet commodi non nesciunt, quod consequatur nobis impedit reprehenderit autem id soluta perferendis alias repellendus ducimus mollitia. Quis neque, quibusdam quaerat adipisci debitis illum aliquam et earum officia accusamus provident! Molestiae pariatur rerum voluptatem voluptate molestias a dicta, placeat nemo obcaecati eveniet quis, vero ut libero quaerat perspiciatis ullam, laborum amet nisi magni alias repellendus sapiente cumque! Cumque doloribus iste amet sapiente quod, explicabo molestias at.</p>
+        </div>
+
+        <div id="footer">
+            <h2>Footer</h2>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector Before After</title>
+</head>
+<body>
+    <style>
+        h2::before{
+            content: "♥️";
+            color:red;
+        }
+        h2:after{
+            content: "♥️";
+            color: red;
+        }
+
+        .list-post a::after{
+            content:url("./images/new.jpg");
+            width: 20px;
+            height: 30px;
+        }
+    </style>
+    <h2>Before and After Selector</h2>
+    <ul class="list-post">
+        <li><a href="">Tin tức thứ 1</a></li>
+        <li><a href="">Tin tức thứ 2</a></li>
+        <li><a href="">Tin tức thứ 3</a></li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Flex Basis</title>
+</head>
+
+<body>
+    <style>
+        .container {
+            background-color: blanchedalmond;
+            display: flex;
+        }
+        .flex-item{
+            flex-basis:200px;
+            padding: 10px;
+            background-color: tomato;
+            margin:10px;
+            text-align: center;
+        }
+        .item1 {
+            order: 3;
+            flex-shrink: 0.4;
+        }
+
+        .item2{
+            order: 1;
+            flex-shrink: 0.4;
+
+        }
+
+        .item3{
+            order: 2;
+        }
+    </style>
+    <div class="container">
+        <div class="flex-item item1">Item 1</div>
+        <div class="flex-item item2">Item 2</div>
+        <div class="flex-item item3">Item 3</div>
+    </div>
+</body>
+
+</html>
